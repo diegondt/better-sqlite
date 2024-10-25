@@ -13,7 +13,5 @@ const db = new Database('database.db');
 
 // Ejecutar el script SQL
 db.exec(sql);
-
 console.log('Base de datos inicializada correctamente.');
-
 db.close();
