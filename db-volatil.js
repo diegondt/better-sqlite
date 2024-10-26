@@ -2,7 +2,7 @@
 const Database = require('better-sqlite3');
 const crypto = require('crypto');
 const fs = require('fs');
-const { readUser } = require('./db-persistente');
+const { readUser } = require('./crud');
 
 const db = new Database(':memory:');
 db.exec("CREATE TABLE users (user TEXT PRIMARY KEY, password TEXT)");

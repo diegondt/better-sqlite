@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const Database = require('better-sqlite3');
+const { readUser, createUser, updateUser, deleteUser } = require('./crud');
 
 // Ruta al archivo .sql
 const sqlFilePath = path.join(__dirname, 'usuarios.sql'); // __dirname es la carpeta del script actual

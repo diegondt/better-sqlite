@@ -1,7 +1,7 @@
 const Database = require('better-sqlite3');
 const crypto = require('crypto');
 const fs = require('fs');
-const { readUser } = require('./crud');
+const { readUser, createUser, updateUser, deleteUser } = require('./crud');
 
 let db_aux = null;
 if(!fs.existsSync('database.db')){
